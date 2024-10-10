@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+  height: 100vh;
+}
+
+header {
+  background-image: url(images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 70%;
+}
+
+.top-shadow {
+  background-image: linear-gradient(to bottom, #000000dc, transparent);
+  height: 220px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  z-index: 1000;
+}
+
+ul {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 25%;
+  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 3%;
+}
+
+li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover {
+  font-size: 22px;
+  box-shadow: 0 4px 0 rgb(251, 172, 0.7);
+  color: rgb(228, 165, 29, 0.726);
+  text-shadow: 1px 1px 2px #000;
+}
+.logo img {
+  width: 90px;
+}
+
+.img:hover {
+  box-shadow: 0 0 0 transparent;
+}
+
+.main {
+  padding-bottom: 6%;
+}
+
+.default {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.default h1 {
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+.default p {
+  font-size: 18px;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*HISTÓRIA*/
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.left {
+  width: 40%;
+  height: 500px;
+  background-image: url(images/acanpamento.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right {
+  width: 60%;
+  text-align: justify;
+  padding: 20px;
+}
+
+/*INSTALAÇÔES*/
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 33%;
+  padding: 20px;
+  border-right: 1px solid #80808077;
+  border-bottom: 1px solid #80808077;
+}
+
+.item img {
+  width: 85%;
+  height: 220px;
+  transition: transform 0.5s;
+  border-radius: 7px;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item h2 {
+  font-size: 22px;
+  padding: 3% 0;
+}
+
+.item p {
+  font-size: 17px;
+  text-align: justify;
+}
+
+/*DIRETORIA*/
+.full-page {
+  height: 800px;
+  background-image: url(images/praia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.full-page > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 3%;
+}
+
+.member {
+  max-width: 800px;
+  background-image: linear-gradient(to top, transparent, #ffffffd3);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  border: 2px solid #f3b839;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin: 10px 5px;
+  color: #ffc400;
+}
+
+.member p {
+  color: #faf6f6;
+}
+
+/* CONTATO */
+.contato > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 50%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form form {
+  width: 50%;
+  padding: 5% 10%;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.form-group label {
+  text-align: left;
+}
+.form-group input,
+textarea {
+  padding: 8px;
+  border: 1px solid #fc7100;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #fc7100;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #fc5000;
+}
+
+/* FOOTER */
+footer {
+  height: 25vh;
+  background-color: #000000ad;
+  color: #fff;
+}
+
+footer > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer1 {
+  width: 33%;
+}
+
+.footer1 h3 {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer1 img {
+  padding: 20px 5px;
+  width: 10%;
+}
+
+.footer1 span {
+  position: relative;
+  bottom: 32px;
+  padding-right: 20px;
+}
+
+.footer2 {
+  width: 33%;
+}
+
+.footer2 p {
+  font-size: 16px;
+  position: relative;
+  top: 80px;
+}
+
+.footer3 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer3 img {
+  width: 10%;
+}
